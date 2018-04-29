@@ -1,0 +1,44 @@
+`timescale 1ns/10ps
+
+module tb_adder;
+
+   // ?ｿｽp?ｿｽ?ｿｽ?ｿｽ?ｿｽ?ｿｽ[?ｿｽ^?ｿｽ?ｿｽ?ｿｽ`
+   parameter CYCLE = 100;
+
+   // ?ｿｽM?ｿｽ?ｿｽ?ｿｽ?ｿｽ?ｿｽ`
+   reg  clk;
+   reg  [3:0] a;
+   reg  [3:0] b;
+   reg  [4:0] i, j;
+   wire [4:0] x;
+
+   // ?ｿｽe?ｿｽX?ｿｽg?ｿｽﾎ象会ｿｽ?ｿｽH x = a + b(?ｿｽ?ｿｽ?ｿｽb?ｿｽv?ｿｽ?ｿｽ?ｿｽL?ｿｽ?ｿｽ?ｿｽ?ｿｽ?ｿｽ[?ｿｽA?ｿｽ_?ｿｽ[)
+   ripple_adder adder (.A(a), .B(b), .X(x));
+
+   // ?ｿｽN?ｿｽ?ｿｽ?ｿｽb?ｿｽN?ｿｽ?ｿｽ?ｿｽ`(?ｿｽe?ｿｽX?ｿｽg?ｿｽT?ｿｽC?ｿｽN?ｿｽ?ｿｽ)
+   always #(CYCLE/2)
+      clk = ~clk;
+
+   // ?ｿｽ?ｿｽ?ｿｽﾍ信?ｿｽ?ｿｽ?ｿｽ?ｿｽ?ｿｽ?ｿｽ ?ｿｽ?ｿｽ ?ｿｽ?ｿｽ?ｿｽﾒ値?ｿｽ?ｿｽ?ｿｽr
+   initial begin
+      clk = 1;
+
+      for ( i = 0 ; i < 16 ; i = i+1 ) begin
+         a = i;
+         for ( j = 0 ; j < 16 ; j = j+1 ) begin
+            b = j;
+            #CYCLE; // ?ｿｽN?ｿｽ?ｿｽ?ｿｽb?ｿｽN1?ｿｽ?ｿｽ?ｿｽ?ｿｽ?ｿｽ?ｿｽ?ｿｽﾌ遅?ｿｽ?ｿｽ
+
+            if ( x !== a+b ) begin
+               $display("error! expval=%h result=%h\n", a+b, x); // ?ｿｽW?ｿｽ?ｿｽ?ｿｽo?ｿｽﾍ表?ｿｽ?ｿｽ
+               $stop;
+            end
+         end
+         // force adder.B[3]=0;  /* ?ｿｽ?ｿｽ?ｿｽ?ｿｽ?ｿｽI?ｿｽﾉエ?ｿｽ?ｿｽ?ｿｽ[?ｿｽ?ｿｽ?ｿｽN?ｿｽ?ｿｽ?ｿｽ?ｿｽ */
+      end
+
+      $display("finish\n"); // ?ｿｽW?ｿｽ?ｿｽ?ｿｽo?ｿｽﾍ表?ｿｽ?ｿｽ
+      $stop;
+   end
+
+endmodule // tb_adder
