@@ -1,4 +1,4 @@
-module fifo(
+module fifo( // 入出力宣言
     input clk,
     input rst,
     input wr,
@@ -12,48 +12,46 @@ module fifo(
     output under,
     output valid);
 
-reg [15:0] mem [8];
-reg [3:0] ptr = 0;
+wire [3:0] cnt;
+wire [2:0] wp;
+wire [2:0] rp;
+
+reg [15:0] data [7:0];
+reg [3:0] wcnt;
+reg [3:0] rcnt;
+reg over_reg;
+reg under_reg;
+
 integer i;
 
-always @(posedge rst) begin
-    ptr <= 0;
-    mem[0] <= 0;
-    almostfull = 0;
-    full = 0;
-    over = 0;
-    empty = 0;
-    under = 0;
-    valid = 0;
-end
+assign dout = data[rp];
+assign cnt = wcnt - rcnt;
+assign full = cnt[3];
+assign empty = (cnt == 0);
+assign wp[2:0] = wcnt[2:0];
+assign rp[2:0] = rcnt[2:0];
+assign almostfull = (cnt >= 7);
+assign over = over_reg;
+assign under = under_reg;
 
-always @(posedge clk) begin
-    if (wr and ptr <= 7) begin
-        mem[ptr] <= din;
-        ptr <= ptr + 1;
-        empty <= 0;
-        if(ptr == 6) begin
-            almostfull <= 1;
-        end else if(ptr == 7) begin
-            mem[ptr] <= din;
-            full <= 1;
-    end else if(wr and ptr >= 8) begin
-        over <= 1;
-    end else if (rd and ptr > 0) begin
-      ptr <= ptr - 1;
-      dout <= mem[0];
-      over <= 0;
-      if(ptr == 0) begin
-            empty <= 1;
+always @(posedge clk or posedge rst ) begin
+    if(rst)begin
+        wcnt <= 0;
+        rcnt <= 0;
+    end else begin
+        if(wr && !full) begin
+            data[wp] <= din;
+            wcnt <= wcnt + 1;
+            under_reg <= 0;
+        end else if(wr && full) begin
+            over_reg <= 1;
         end
-        for (i = 0; i == ptr ; i = i+1 ) begin
-            mem[i] <= mem[i - 1];
+        if(rd && !empty) begin
+            rcnt <= rcnt + 1;
+            over_reg <= 0;
+        end else if (rd && empty) begin
+            under_reg <= 1;
         end
-    end else if (rd) begin
-      dout <= mem[0];
-      under <= 1;
     end
 end
-
-
-endmodule // fifo
+endmodule
