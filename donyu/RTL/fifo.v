@@ -16,6 +16,17 @@ reg [15:0] mem [8];
 reg [3:0] ptr = 0;
 integer i;
 
+always @(posedge rst) begin
+    ptr <= 0;
+    mem[0] <= 0;
+    almostfull = 0;
+    full = 0;
+    over = 0;
+    empty = 0;
+    under = 0;
+    valid = 0;
+end
+
 always @(posedge clk) begin
     if (wr and ptr <= 7) begin
         mem[ptr] <= din;
