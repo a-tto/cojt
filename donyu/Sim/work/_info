@@ -19,22 +19,22 @@ n@_opt
 Z3 OL;O;10.5c;63
 R0
 T_opt1
-!s110 1525239710
-Vif7;DMahmzK1zC?]XKOS70
+!s110 1525240753
+VAG=@?VBnM9=I]3TzS8;@72
 04 7 4 work tb_fifo fast 0
-=8-90b11ca0d3c1-5ae94f9e-1e2-628
+=13-90b11ca0d3c1-5ae953b1-299-628
 R1
 R2
 n@_opt1
 R3
 vfifo
-!s110 1525239706
+!s110 1525240749
 !i10b 1
-!s100 gb@g4;<E9NJ2a^hgJU@IG3
-IH9^naoA6<goYc1iHMIlD[3
+!s100 UZN50R?OO3Y=m`nh@dWIJ1
+IhnfQBW^Fk:gPLLT]9i[`c0
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 Z5 dC:/cojt/donyu/Sim
-w1525239697
+w1525240745
 8C:/cojt/donyu/RTL/fifo.v
 FC:/cojt/donyu/RTL/fifo.v
 L0 1
@@ -42,7 +42,7 @@ Z6 OL;L;10.5c;63
 r1
 !s85 0
 31
-!s108 1525239706.000000
+!s108 1525240749.000000
 !s107 C:/cojt/donyu/RTL/fifo.v|
 !s90 -reportprogress|300|-work|work|C:/cojt/donyu/RTL/fifo.v|
 !i113 0
