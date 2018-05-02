@@ -19,18 +19,32 @@ module tb_fifo;
 
     fifo f (.clk(clk), .rst(rst), .wr(wr), .rd(rd), .din(din), .dout(dout), .almostfull(almostfull), .full(full), .over(over), .empty(empty), .under(under), .valid(valid));
 
-    always # (CYCLE / 2)
+    always # (CYCLE/2)
         clk = ~clk;
-        initial begin
+    initial begin
         clk = 1;
+        rst = 1;
+        rd = 0;
+        wr = 0;
+        # (10 * CYCLE);
         rst = 0;
-
         for(i = 1; i <= 9; i = i + 1) begin
+            #CYCLE;
             din = i;
-            rst = 0;
+            
             wr = 1;
-            $display("din = %d, \n", din);
-            $display("almostfull = %d, full = %d\n", almostfull, full);
+            $display("din = %d, ", din);
+            $display("almostfull = %d, full = %d, over = %d\n", almostfull, full, over);
+        end
+
+        #CYCLE;
+        wr = 0;
+        
+        for(i = 1; i <= 9; i = i + 1) begin
+            #CYCLE;
+            rd = 1;
+            $display("dout = %d,", dout);
+            $display("empty = %d, under = %d\n", empty, under);
         end
         $display("finish\n");
         $stop;
