@@ -15,38 +15,80 @@ module tb_fifo;
     wire empty;
     wire under;
     wire valid;
-    integer i;
+    integer i,j;
 
-    fifo f (.clk(clk), .rst(rst), .wr(wr), .rd(rd), .din(din), .dout(dout), .almostfull(almostfull), .full(full), .over(over), .empty(empty), .under(under), .valid(valid));
+    fifo fifo1 (.CLK(clk), .RST(rst), .WR(wr), .RD(rd), .DIN(din), .DOUT(dout), .almostFULL(almostfull), .FULL(full), .OVER(over), .EMPTY(empty), .UNDER(under), .VALID(valid));
 
     always # (CYCLE/2)
         clk = ~clk;
     initial begin
         clk = 1;
         rst = 1;
+        #(CYCLE * 0.5);
         rd = 0;
         wr = 0;
         # (10 * CYCLE);
         rst = 0;
-        for(i = 1; i <= 9; i = i + 1) begin
+
+        for(i = 1; i <= 10; i = i + 1) begin
             #CYCLE;
             din = i;
             
             wr = 1;
-            $display("din = %d, ", din);
-            $display("almostfull = %d, full = %d, over = %d\n", almostfull, full, over);
         end
 
         #CYCLE;
         wr = 0;
         
-        for(i = 1; i <= 9; i = i + 1) begin
+        for(j = 1; j <= 12; j = j + 1) begin
             #CYCLE;
-            rd = 1;
-            $display("dout = %d,", dout);
-            $display("empty = %d, under = %d\n", empty, under);
+            if (j == 4 || j == 5) begin
+              
+              din = i;
+              wr = 1;
+              rd = 1;
+              i = i+1;
+            end else begin
+                wr = 0;
+                rd = 1;
+            end
         end
-        $display("finish\n");
+        rd = 0;
+
+        # (CYCLE * 3)
+
+        rd = 1;
+        wr = 1;
+        #(CYCLE);
+        rd = 0;
+        wr = 0;
+        #CYCLE;
+
+        for(i = 1; i <= 7; i = i + 1) begin
+            #CYCLE;
+            din = i;
+            
+            wr = 1;
+        end
+
+        //almostfull状態で同時読み書き
+        #CYCLE;
+        wr = 1;
+        rd = 1;
+        #(CYCLE);
+        wr = 0;
+        rd = 0;
+        #CYCLE
+        
+        //fullにする
+        wr = 1;
+        #CYCLE;
+
+        //full状態で同時読み書き
+        wr = 1;
+        rd = 1;
+        #CYCLE;
+
         $stop;
     end
 endmodule
