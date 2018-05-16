@@ -9,15 +9,14 @@ z2
 cModel Technology
 Z0 dC:/COJT/donyu/Sim
 T_opt
-!s110 1524825095
-Vn@=BC3o;Lg4]9N4ig79li0
-04 7 4 work tb_mult fast 0
-=6-90b11ca0d3c1-5ae2fc06-367-1c9c
+!s110 1525871018
+V68_jlOK0<RT]R7;17HC:z3
+04 9 4 work tb_kadai4 fast 0
+=6-90b11ca0d3c1-5af2f1aa-2d5-120c
 Z1 o-quiet -auto_acc_if_foreign -work work +acc
 Z2 tCvgOpt 0
 n@_opt
 Z3 OL;O;10.5c;63
-R0
 T_opt1
 !s110 1525832666
 V5;cN]?AL]mg9;fMPjlDX73
@@ -37,39 +36,40 @@ R1
 R2
 n@_opt2
 R3
+R0
 vfifo
-!s110 1525841725
+Z4 !s110 1525870491
 !i10b 1
 !s100 k;8:EU;hmGT60K]hS:a4W2
 I_SaWojMiUI=22ici;9Sch1
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-Z5 dC:/cojt/donyu/Sim
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 dC:/cojt/donyu/Sim
 w1525841711
 8C:/cojt/donyu/RTL/fifo.v
 FC:/cojt/donyu/RTL/fifo.v
 L0 1
-Z6 OL;L;10.5c;63
+Z7 OL;L;10.5c;63
 r1
 !s85 0
 31
-!s108 1525841725.000000
+Z8 !s108 1525870491.000000
 !s107 C:/cojt/donyu/RTL/fifo.v|
 !s90 -reportprogress|300|-work|work|C:/cojt/donyu/RTL/fifo.v|
 !i113 0
-Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
 vfifo_yatteiki
 !s110 1525775978
 !i10b 1
 !s100 EL1hkDnDoBPXmLLSR@2ha3
 I=4A5]NhnG4eHLc648cghM0
-R4
 R5
+R6
 w1525775964
 8C:/cojt/donyu/RTL/fifo_yatteiki.v
 FC:/cojt/donyu/RTL/fifo_yatteiki.v
 L0 1
-R6
+R7
 r1
 !s85 0
 31
@@ -77,62 +77,62 @@ r1
 !s107 C:/cojt/donyu/RTL/fifo_yatteiki.v|
 !s90 -reportprogress|300|-work|work|C:/cojt/donyu/RTL/fifo_yatteiki.v|
 !i113 0
-R7
+R9
 R2
 vfull_adder
-Z8 !s110 1524822739
+Z10 !s110 1524822739
 !i10b 1
 !s100 zibWeY_DmeZZO>>J?L0Xn3
 I15X?S@33_hk6WzMC2lN_<0
-R4
+R5
 R0
-Z9 w1524207092
+Z11 w1524207092
 8C:/COJT/donyu/RTL/full_adder.v
 FC:/COJT/donyu/RTL/full_adder.v
 L0 1
-R6
+R7
 r1
 !s85 0
 31
-Z10 !s108 1524822739.000000
+Z12 !s108 1524822739.000000
 !s107 C:/COJT/donyu/RTL/full_adder.v|
 !s90 -reportprogress|300|-work|work|C:/COJT/donyu/RTL/full_adder.v|
 !i113 0
-R7
+R9
 R2
 vhalf_adder
-R8
+R10
 !i10b 1
 !s100 k^[dZA9UESc@^795d;j0:1
 I>g3a?BNMNMAI>`L[TFk1;1
-R4
+R5
 R0
-R9
+R11
 8C:/COJT/donyu/RTL/half_adder.v
 FC:/COJT/donyu/RTL/half_adder.v
 L0 1
-R6
+R7
 r1
 !s85 0
 31
-R10
+R12
 !s107 C:/COJT/donyu/RTL/half_adder.v|
 !s90 -reportprogress|300|-work|work|C:/COJT/donyu/RTL/half_adder.v|
 !i113 0
-R7
+R9
 R2
 vkadai3
 !s110 1525844840
 !i10b 1
 !s100 E6d:eW?4HM4c^TUETdLfT0
 IQ`<QGNfENFLZ^EH<5abk61
-R4
 R5
+R6
 w1525844830
 8C:/cojt/donyu/RTL/kadai3.v
 FC:/cojt/donyu/RTL/kadai3.v
 L0 1
-R6
+R7
 r1
 !s85 0
 31
@@ -140,62 +140,83 @@ r1
 !s107 C:/cojt/donyu/RTL/kadai3.v|
 !s90 -reportprogress|300|-work|work|C:/cojt/donyu/RTL/kadai3.v|
 !i113 0
+R9
+R2
+vkadai4
+!s110 1525870946
+!i10b 1
+!s100 1Eg2Cm6_eTI4fzbR042@93
+I]UE8G7N_>1<?fNROIzF8=0
+R5
+R6
+w1525870936
+8C:/cojt/donyu/RTL/kadai4.v
+FC:/cojt/donyu/RTL/kadai4.v
+L0 1
 R7
+r1
+!s85 0
+31
+!s108 1525870946.000000
+!s107 C:/cojt/donyu/RTL/kadai4.v|
+!s90 -reportprogress|300|-work|work|C:/cojt/donyu/RTL/kadai4.v|
+!i113 0
+R9
 R2
 vmult
-!s110 1525840571
+R4
 !i10b 1
 !s100 ^WTPIlU98c?7U4BhCIRLB0
 IK5deI>1heh1iXG`e1=6Mf2
-R4
 R5
+R6
 w1525765202
 8C:/cojt/donyu/RTL/mult.v
 FC:/cojt/donyu/RTL/mult.v
 L0 1
-R6
+R7
 r1
 !s85 0
 31
-!s108 1525840571.000000
+R8
 !s107 C:/cojt/donyu/RTL/mult.v|
 !s90 -reportprogress|300|-work|work|C:/cojt/donyu/RTL/mult.v|
 !i113 0
-R7
+R9
 R2
 vtb_fifo
-!s110 1525832650
+!s110 1525859255
 !i10b 1
-!s100 bIDKhkkCe9Nnaf9<:<A_X1
-IAV8EN1@NUD2YaEmdFkol>0
-R4
+!s100 LWb3jC9bzJE[[F8`_UaYW3
+IJW933M@U_70hDhzijP=oK3
 R5
-w1525832518
-8C:/cojt/donyu/Sim/tb/tb_fifo.v
-FC:/cojt/donyu/Sim/tb/tb_fifo.v
-L0 3
 R6
+w1525858949
+Z13 8C:/cojt/donyu/Sim/tb/tb_kadai4.v
+Z14 FC:/cojt/donyu/Sim/tb/tb_kadai4.v
+L0 3
+R7
 r1
 !s85 0
 31
-!s108 1525832650.000000
-!s107 C:/cojt/donyu/Sim/tb/tb_fifo.v|
-!s90 -reportprogress|300|-work|work|C:/cojt/donyu/Sim/tb/tb_fifo.v|
+!s108 1525859255.000000
+Z15 !s107 C:/cojt/donyu/Sim/tb/tb_kadai4.v|
+Z16 !s90 -reportprogress|300|-work|work|C:/cojt/donyu/Sim/tb/tb_kadai4.v|
 !i113 0
-R7
+R9
 R2
 vtb_kadai3
 !s110 1525845316
 !i10b 1
 !s100 03ok>M>:l9KgV1C6ncZ?T1
 I0UDF;^TCSgQh;<^k1O[h:0
-R4
 R5
+R6
 w1525845305
 8C:/cojt/donyu/Sim/tb/tb_kadai3.v
 FC:/cojt/donyu/Sim/tb/tb_kadai3.v
 L0 3
-R6
+R7
 r1
 !s85 0
 31
@@ -203,20 +224,41 @@ r1
 !s107 C:/cojt/donyu/Sim/tb/tb_kadai3.v|
 !s90 -reportprogress|300|-work|work|C:/cojt/donyu/Sim/tb/tb_kadai3.v|
 !i113 0
+R9
+R2
+vtb_kadai4
+!s110 1525871012
+!i10b 1
+!s100 ;K517FXn`g9>z:z^UNX_M1
+IIfB:B<`W1m@b6X48R3baX3
+R5
+R6
+w1525870999
+R13
+R14
+L0 3
 R7
+r1
+!s85 0
+31
+!s108 1525871012.000000
+R15
+R16
+!i113 0
+R9
 R2
 vtb_mult
 !s110 1524820928
 !i10b 1
 !s100 e[^cIoDFGNnR6S6>f]_NC2
 IQeeAfcB[^n[jkhf>eTXNo2
-R4
+R5
 R0
 w1524820913
 8C:/COJT/donyu/Sim/tb/tb_mult.v
 FC:/COJT/donyu/Sim/tb/tb_mult.v
 L0 3
-R6
+R7
 r1
 !s85 0
 31
@@ -224,5 +266,5 @@ r1
 !s107 C:/COJT/donyu/Sim/tb/tb_mult.v|
 !s90 -reportprogress|300|-work|work|C:/COJT/donyu/Sim/tb/tb_mult.v|
 !i113 0
-R7
+R9
 R2

@@ -1,0 +1,23 @@
+18:00:40 **** Auto Build of configuration Debug for project blink ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/blink.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blink.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hello_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/blink.d" -MT"src/blink.o" -o "src/blink.o" "../src/blink.c"
+'Finished building: ../src/blink.c'
+' '
+'Building target: blink.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hello_bsp/ps7_cortexa9_0/lib -o "blink.elf"  ./src/blink.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: blink.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size blink.elf  |tee "blink.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19500	   1148	  22568	  43216	   a8d0	blink.elf
+'Finished building: blink.elf.size'
+' '
+
+18:00:41 Build Finished (took 1s.45ms)
+
