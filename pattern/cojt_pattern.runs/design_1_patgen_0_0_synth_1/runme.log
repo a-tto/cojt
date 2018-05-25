@@ -1,0 +1,407 @@
+
+*** Running vivado
+    with args -log design_1_patgen_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_patgen_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_patgen_0_0.tcl -notrace
+Command: synth_design -top design_1_patgen_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8668 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 318.410 ; gain = 106.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_patgen_0_0' [c:/cojt/pattern/cojt_pattern.srcs/sources_1/bd/design_1/ip/design_1_patgen_0_0/synth/design_1_patgen_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'patgen' [c:/cojt/pattern/cojt_pattern.srcs/sources_1/bd/design_1/ipshared/ee88/hdl/patgen.v:14]
+	Parameter P_VGA_WIDTH bound to: 640 - type: integer 
+	Parameter P_VGA_HEIGHT bound to: 480 - type: integer 
+	Parameter P_VGA_HSC bound to: 800 - type: integer 
+	Parameter P_VGA_HFP bound to: 16 - type: integer 
+	Parameter P_VGA_HPW bound to: 96 - type: integer 
+	Parameter P_VGA_HBP bound to: 48 - type: integer 
+	Parameter P_VGA_VSC bound to: 525 - type: integer 
+	Parameter P_VGA_VFP bound to: 10 - type: integer 
+	Parameter P_VGA_VPW bound to: 2 - type: integer 
+	Parameter P_VGA_VBP bound to: 33 - type: integer 
+	Parameter P_VGA_HDO bound to: 640 - type: integer 
+	Parameter P_VGA_VDO bound to: 480 - type: integer 
+	Parameter P_XGA_WIDTH bound to: 1024 - type: integer 
+	Parameter P_XGA_HEIGHT bound to: 768 - type: integer 
+	Parameter P_XGA_HSC bound to: 1344 - type: integer 
+	Parameter P_XGA_HFP bound to: 24 - type: integer 
+	Parameter P_XGA_HPW bound to: 136 - type: integer 
+	Parameter P_XGA_HBP bound to: 160 - type: integer 
+	Parameter P_XGA_VSC bound to: 806 - type: integer 
+	Parameter P_XGA_VFP bound to: 3 - type: integer 
+	Parameter P_XGA_VPW bound to: 6 - type: integer 
+	Parameter P_XGA_VBP bound to: 29 - type: integer 
+	Parameter P_XGA_HDO bound to: 1024 - type: integer 
+	Parameter P_XGA_VDO bound to: 768 - type: integer 
+	Parameter P_SXGA_WIDTH bound to: 1280 - type: integer 
+	Parameter P_SXGA_HEIGHT bound to: 1024 - type: integer 
+	Parameter P_SXGA_HSC bound to: 1688 - type: integer 
+	Parameter P_SXGA_HFP bound to: 48 - type: integer 
+	Parameter P_SXGA_HPW bound to: 112 - type: integer 
+	Parameter P_SXGA_HBP bound to: 248 - type: integer 
+	Parameter P_SXGA_VSC bound to: 1066 - type: integer 
+	Parameter P_SXGA_VFP bound to: 1 - type: integer 
+	Parameter P_SXGA_VPW bound to: 3 - type: integer 
+	Parameter P_SXGA_VBP bound to: 38 - type: integer 
+	Parameter P_SXGA_HDO bound to: 1280 - type: integer 
+	Parameter P_SXGA_VDO bound to: 1024 - type: integer 
+	Parameter P_RESOL_VGA bound to: 2'b00 
+	Parameter P_RESOL_XGA bound to: 2'b01 
+	Parameter P_RESOL_SXGA bound to: 2'b10 
+INFO: [Synth 8-638] synthesizing module 'syncgen' [c:/cojt/pattern/cojt_pattern.srcs/sources_1/bd/design_1/ipshared/ee88/hdl/syncgen.v:15]
+	Parameter P_VGA_WIDTH bound to: 640 - type: integer 
+	Parameter P_VGA_HEIGHT bound to: 480 - type: integer 
+	Parameter P_VGA_HSC bound to: 800 - type: integer 
+	Parameter P_VGA_HFP bound to: 16 - type: integer 
+	Parameter P_VGA_HPW bound to: 96 - type: integer 
+	Parameter P_VGA_HBP bound to: 48 - type: integer 
+	Parameter P_VGA_VSC bound to: 525 - type: integer 
+	Parameter P_VGA_VFP bound to: 10 - type: integer 
+	Parameter P_VGA_VPW bound to: 2 - type: integer 
+	Parameter P_VGA_VBP bound to: 33 - type: integer 
+	Parameter P_VGA_HDO bound to: 640 - type: integer 
+	Parameter P_VGA_VDO bound to: 480 - type: integer 
+	Parameter P_XGA_WIDTH bound to: 1024 - type: integer 
+	Parameter P_XGA_HEIGHT bound to: 768 - type: integer 
+	Parameter P_XGA_HSC bound to: 1344 - type: integer 
+	Parameter P_XGA_HFP bound to: 24 - type: integer 
+	Parameter P_XGA_HPW bound to: 136 - type: integer 
+	Parameter P_XGA_HBP bound to: 160 - type: integer 
+	Parameter P_XGA_VSC bound to: 806 - type: integer 
+	Parameter P_XGA_VFP bound to: 3 - type: integer 
+	Parameter P_XGA_VPW bound to: 6 - type: integer 
+	Parameter P_XGA_VBP bound to: 29 - type: integer 
+	Parameter P_XGA_HDO bound to: 1024 - type: integer 
+	Parameter P_XGA_VDO bound to: 768 - type: integer 
+	Parameter P_SXGA_WIDTH bound to: 1280 - type: integer 
+	Parameter P_SXGA_HEIGHT bound to: 1024 - type: integer 
+	Parameter P_SXGA_HSC bound to: 1688 - type: integer 
+	Parameter P_SXGA_HFP bound to: 48 - type: integer 
+	Parameter P_SXGA_HPW bound to: 112 - type: integer 
+	Parameter P_SXGA_HBP bound to: 248 - type: integer 
+	Parameter P_SXGA_VSC bound to: 1066 - type: integer 
+	Parameter P_SXGA_VFP bound to: 1 - type: integer 
+	Parameter P_SXGA_VPW bound to: 3 - type: integer 
+	Parameter P_SXGA_VBP bound to: 38 - type: integer 
+	Parameter P_SXGA_HDO bound to: 1280 - type: integer 
+	Parameter P_SXGA_VDO bound to: 1024 - type: integer 
+	Parameter P_RESOL_VGA bound to: 2'b00 
+	Parameter P_RESOL_XGA bound to: 2'b01 
+	Parameter P_RESOL_SXGA bound to: 2'b10 
+INFO: [Synth 8-256] done synthesizing module 'syncgen' (1#1) [c:/cojt/pattern/cojt_pattern.srcs/sources_1/bd/design_1/ipshared/ee88/hdl/syncgen.v:15]
+INFO: [Synth 8-256] done synthesizing module 'patgen' (2#1) [c:/cojt/pattern/cojt_pattern.srcs/sources_1/bd/design_1/ipshared/ee88/hdl/patgen.v:14]
+INFO: [Synth 8-256] done synthesizing module 'design_1_patgen_0_0' (3#1) [c:/cojt/pattern/cojt_pattern.srcs/sources_1/bd/design_1/ip/design_1_patgen_0_0/synth/design_1_patgen_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 355.301 ; gain = 143.387
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 355.301 ; gain = 143.387
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.031 . Memory (MB): peak = 667.121 ; gain = 0.156
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 667.121 ; gain = 455.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 667.121 ; gain = 455.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 667.121 ; gain = 455.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "color" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 667.121 ; gain = 455.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
+	   2 Input     11 Bit       Adders := 3     
+	   3 Input     11 Bit       Adders := 2     
+	   5 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Multipliers : 
+	                11x32  Multipliers := 16    
++---Muxes : 
+	   3 Input     13 Bit        Muxes := 2     
+	   3 Input     12 Bit        Muxes := 2     
+	   3 Input     10 Bit        Muxes := 4     
+	   3 Input      8 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 2     
+	   3 Input      6 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module syncgen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 3     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input     13 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module patgen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
+	   5 Input     11 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Multipliers : 
+	                11x32  Multipliers := 16    
++---Muxes : 
+	   3 Input     13 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 667.121 ; gain = 455.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 667.121 ; gain = 455.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 667.121 ; gain = 455.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 684.195 ; gain = 472.281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 684.195 ; gain = 472.281
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 684.195 ; gain = 472.281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 684.195 ; gain = 472.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 684.195 ; gain = 472.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 684.195 ; gain = 472.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 684.195 ; gain = 472.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    77|
+|2     |LUT1   |    23|
+|3     |LUT2   |   106|
+|4     |LUT3   |    61|
+|5     |LUT4   |   138|
+|6     |LUT5   |    38|
+|7     |LUT6   |    81|
+|8     |FDRE   |    34|
+|9     |FDSE   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+--------+------+
+|      |Instance    |Module  |Cells |
++------+------------+--------+------+
+|1     |top         |        |   560|
+|2     |  inst      |patgen  |   554|
+|3     |    syncgen |syncgen |   280|
++------+------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 684.195 ; gain = 472.281
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 684.195 ; gain = 131.719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 684.195 ; gain = 472.281
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 684.195 ; gain = 443.539
+INFO: [Common 17-1381] The checkpoint 'C:/cojt/pattern/cojt_pattern.runs/design_1_patgen_0_0_synth_1/design_1_patgen_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/cojt/pattern/cojt_pattern.srcs/sources_1/bd/design_1/ip/design_1_patgen_0_0/design_1_patgen_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/cojt/pattern/cojt_pattern.runs/design_1_patgen_0_0_synth_1/design_1_patgen_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 684.195 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 23 14:46:13 2018...

@@ -1,0 +1,84 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/cojt/pattern/SIM
+T_opt
+!s110 1527051188
+V1ajVCObNBY_gS7^9R_]6?1
+04 9 4 work tb_patgen fast 0
+=12-90b11ca0d3c1-5b04f3b4-2d5-1fe8
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.5c;63
+vpatgen
+Z2 !s110 1527051184
+!i10b 1
+!s100 T>?I6FWINQBN26=Bn]NER2
+I6iSSM?01LeM?_Qj5Z>`ze1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1527049961
+8C:/cojt/pattern/patgen_ip/HDL/patgen.v
+FC:/cojt/pattern/patgen_ip/HDL/patgen.v
+Z4 FC:\cojt\pattern\patgen_ip\HDL\syncgen_param.vh
+L0 14
+Z5 OL;L;10.5c;63
+r1
+!s85 0
+31
+Z6 !s108 1527051184.000000
+!s107 C:\cojt\pattern\patgen_ip\HDL\syncgen_param.vh|C:/cojt/pattern/patgen_ip/HDL/patgen.v|
+!s90 -reportprogress|300|-work|work|C:/cojt/pattern/patgen_ip/HDL/patgen.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vsyncgen
+R2
+!i10b 1
+!s100 <JI5<n5jooQJWm[77NQ773
+IEU;0DAEmn5_NLJ:Z;^VZn2
+R3
+R0
+w1527051170
+8C:/cojt/pattern/patgen_ip/HDL/syncgen.v
+FC:/cojt/pattern/patgen_ip/HDL/syncgen.v
+R4
+L0 15
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:\cojt\pattern\patgen_ip\HDL\syncgen_param.vh|C:/cojt/pattern/patgen_ip/HDL/syncgen.v|
+!s90 -reportprogress|300|-work|work|C:/cojt/pattern/patgen_ip/HDL/syncgen.v|
+!i113 0
+R7
+R1
+vtb_patgen
+!s110 1527048204
+!i10b 1
+!s100 >]NHlHoldZY1cnnM5eAED1
+IJ0A3[[QzgfDZ?1?m53BEO1
+R3
+R0
+w1526633260
+8C:/cojt/pattern/SIM/tb/tb_patgen.v
+FC:/cojt/pattern/SIM/tb/tb_patgen.v
+L0 17
+R5
+r1
+!s85 0
+31
+!s108 1527048204.000000
+!s107 C:/cojt/pattern/SIM/tb/tb_patgen.v|
+!s90 -reportprogress|300|-work|work|C:/cojt/pattern/SIM/tb/tb_patgen.v|
+!i113 0
+R7
+R1

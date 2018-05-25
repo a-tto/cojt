@@ -1,0 +1,49 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 550 -defaultsOSRD
+preplace port DVI_DE -pg 1 -y 170 -defaultsOSRD
+preplace port DVI_CLK -pg 1 -y 110 -defaultsOSRD
+preplace port DVI_VSYNC -pg 1 -y 150 -defaultsOSRD
+preplace port DVI_HSYNC -pg 1 -y 130 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 650 -defaultsOSRD
+preplace port DVI_RST -pg 1 -y 600 -defaultsOSRD
+preplace port DVI -pg 1 -y 460 -defaultsOSRD
+preplace portBus DVI_DATA -pg 1 -y 190 -defaultsOSRD
+preplace inst rst_ps7_0_125M -pg 1 -lvl 1 -y 730 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 4 -y 480 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 4 -y 340 -defaultsOSRD
+preplace inst util_reduced_logic_0 -pg 1 -lvl 4 -y 600 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -y 350 -defaultsOSRD
+preplace inst patgen_0 -pg 1 -lvl 3 -y 110 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y 590 -defaultsOSRD
+preplace inst dispsub_0 -pg 1 -lvl 4 -y 140 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 2 3 730J 550 NJ 550 NJ
+preplace netloc patgen_0_DSP_HSYNC_X 1 3 1 1020
+preplace netloc patgen_0_DSP_G 1 3 1 N
+preplace netloc dispsub_0_DVI_HSYNC 1 4 1 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 720
+preplace netloc patgen_0_DSP_DE 1 3 1 1060
+preplace netloc dispsub_0_DVI_DE 1 4 1 NJ
+preplace netloc rst_ps7_0_125M_peripheral_aresetn 1 1 3 NJ 770 740 770 1040
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 20 820 NJ 820 710
+preplace netloc dispsub_0_DVI_DATA 1 4 1 NJ
+preplace netloc rst_ps7_0_125M_interconnect_aresetn 1 1 2 NJ 750 750
+preplace netloc dispsub_0_DVI_VSYNC 1 4 1 NJ
+preplace netloc dispsub_0_DVI_CLK 1 4 1 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 1 1020
+preplace netloc axi_gpio_0_gpio_io_o 1 2 3 750 10 1070 10 1320
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 710J 650 NJ 650 NJ
+preplace netloc util_reduced_logic_0_Res 1 4 1 NJ
+preplace netloc patgen_0_DSP_B 1 3 1 N
+preplace netloc dispsub_0_DCLK 1 2 3 760 210 1020J 270 1310
+preplace netloc axi_iic_0_IIC 1 4 1 NJ
+preplace netloc axi_iic_0_gpo 1 3 2 1070 660 1310
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 290 330 290 700 510 1070
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 1020
+preplace netloc processing_system7_0_FCLK_CLK1 1 2 2 N 660 1050J
+preplace netloc patgen_0_DSP_VSYNC_X 1 3 1 1030
+preplace netloc patgen_0_DSP_R 1 3 1 N
+levelinfo -pg 1 0 180 520 890 1190 1340 -top 0 -bot 830
+",
+}
